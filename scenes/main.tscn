@@ -12,7 +12,9 @@ sky_material = SubResource("ProceduralSkyMaterial_sgp6g")
 [sub_resource type="Environment" id="Environment_0wfyh"]
 background_mode = 2
 sky = SubResource("Sky_o5qli")
+ambient_light_sky_contribution = 0.5
 tonemap_mode = 2
+ssao_enabled = true
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgp6g"]
@@ -28,7 +30,7 @@ use_collision = true
 environment = SubResource("Environment_0wfyh")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1852530934]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+transform = Transform3D(-1, -5.39283e-08, 8.08868e-08, 2.7298446e-08, 0.64278746, 0.7660445, -9.3304486e-08, 0.7660445, -0.64278746, 0, 409.6, 0)
 shadow_enabled = true
 
 [node name="City" type="CSGCombiner3D" parent="." unique_id=1681383165]
@@ -101,7 +103,7 @@ transform = Transform3D(-1.6399384e-06, 3.2695677, -25.881357, -14.162968, -5.39
 transform = Transform3D(-2.1624119e-06, 3.2479997, 9.536742e-07, -14.306018, -4.105685e-08, 0, -5.0022204e-13, 1.7285348e-07, 23.598001, 366.8, 3.0075192, -447.39996)
 
 [node name="Supports3" type="CSGBox3D" parent="City" unique_id=1321751631]
-transform = Transform3D(6.5369926e-13, -2.324581e-07, -23.597994, -13.005469, -4.4171504e-08, -5.969008e-15, -1.9658287e-06, 3.4943986, 0, 485.10004, 3.7304807, -318.8)
+transform = Transform3D(6.5369926e-13, -2.324581e-07, -23.597994, -13.005469, -4.4171504e-08, -5.969008e-15, -1.9658287e-06, 3.4943986, 0, 485.10004, 3.730481, -320)
 
 [node name="Supports4" type="CSGBox3D" parent="City" unique_id=2141575128]
 transform = Transform3D(1.9658285e-06, -3.494399, 3.094503e-06, -13.005468, -4.417152e-08, -1.790702e-14, 7.5299006e-13, -3.852032e-07, -70.79398, 474.8, 3.7304807, -357.09998)
@@ -263,4 +265,20 @@ transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 403.80
 transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 451.10004, -0.31810296, -187.8)
 
 [node name="ProtoController" parent="." unique_id=1411599863 instance=ExtResource("1_o5qli")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 523.8, 10.599987, -277.59998)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 483.4, 4.4999866, -179.79997)
+
+[node name="Lamp1" type="OmniLight3D" parent="." unique_id=1639374399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 713.4, 8.3, -524)
+light_color = Color(1, 0.9411765, 0.70980394, 1)
+light_energy = 5.632
+light_size = 0.151
+shadow_enabled = true
+omni_range = 20.743
+
+[node name="Lamp2" type="OmniLight3D" parent="." unique_id=348001084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 713.4, 8.3, -429.1)
+light_color = Color(1, 0.9411765, 0.70980394, 1)
+light_energy = 5.632
+light_size = 0.151
+shadow_enabled = true
+omni_range = 20.743
