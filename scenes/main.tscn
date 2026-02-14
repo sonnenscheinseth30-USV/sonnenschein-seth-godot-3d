@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://bp2qdubbpito4"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_o5qli"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sgp6g"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_o5qli"]
+sky_material = SubResource("ProceduralSkyMaterial_sgp6g")
+
+[sub_resource type="Environment" id="Environment_0wfyh"]
+background_mode = 2
+sky = SubResource("Sky_o5qli")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgp6g"]
+
+[node name="Main" type="Node3D" unique_id=1373912490]
+
+[node name="Ground" type="CSGBox3D" parent="." unique_id=222942957]
+transform = Transform3D(543.6921, 0, 0, 0, -6.170472, 0, 0, 0, 696.1735, 490.39996, -0.20000553, -429.60004)
+layers = 3
+use_collision = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2033352164]
+environment = SubResource("Environment_0wfyh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1852530934]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="City" type="CSGCombiner3D" parent="." unique_id=1681383165]
+transform = Transform3D(1, 0, 0, 0, 3.458, 0, 0, 0, 1, 224.8, 8.999998, -94.2)
+layers = 3
+use_collision = true
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="City" unique_id=890499215]
+transform = Transform3D(130.3651, 0, 0, 0, 3.3668017, 0, 0, 0, 161.1424, 292, 1.8796998, -367.00006)
+sides = 32
+material = SubResource("StandardMaterial3D_sgp6g")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="City/CSGCylinder3D" unique_id=828931466]
+transform = Transform3D(0.71279997, 0, 0, 0, 6.0500007, 0, 0, 0, 0.648, -0.0053696632, 1.6835015, 0.009308577)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="City/CSGCylinder3D" unique_id=46637183]
+transform = Transform3D(0.0735, 0, 0, 0, 1, 0, 0, 0, 0.0588, -0.029149294, 5.102041, 0.0012409687)
+sides = 32
+
+[node name="Front" type="CSGBox3D" parent="City" unique_id=1622522924]
+transform = Transform3D(419.83926, 0, 0, 0, 16.146002, 0, 0, 0, 24.786, 258.148, 5.1764035, -8.699997)
+use_collision = true
+size = Vector3(1.2, 1, 1)
+
+[node name="Main Archway" type="CSGCylinder3D" parent="City/Front" unique_id=681602398]
+transform = Transform3D(-5.437278e-09, 0, 0.073856845, 0.9353625, -3.1265772e-09, 2.427607e-08, 7.6092743e-07, 1.3311998, -1.6972001e-14, -0.044178963, -0.26686794, -0.36666203)
+operation = 2
+sides = 32
+
+[node name="Right" type="CSGBox3D" parent="City" unique_id=230681738]
+transform = Transform3D(-1.816824e-05, 0, -23.990402, 0, 16.146002, 0, 415.6409, 0, -1.0486538e-06, 509.54803, 5.1764035, -245.10002)
+size = Vector3(1.2, 1, 1)
+
+[node name="Right2" type="CSGBox3D" parent="City" unique_id=249091273]
+transform = Transform3D(-6.5405675e-06, 0, -23.990402, 0, 17.760603, 0, 149.63074, 0, -1.0486538e-06, 509.148, 4.3088503, -584.9)
+size = Vector3(1.2, 1, 1)
+
+[node name="Right3" type="CSGBox3D" parent="City" unique_id=620419569]
+transform = Transform3D(-6.5405675e-06, 0, -23.990402, 0, 17.760603, 0, 149.63074, 0, -1.0486538e-06, 212.648, 4.3088503, -584.9)
+size = Vector3(1.2, 1, 1)
+
+[node name="Right4" type="CSGBox3D" parent="City" unique_id=89112907]
+transform = Transform3D(-230.4313, 0, 2.0973073e-06, 0, 17.760603, 0, -2.0144944e-05, 0, -23.990398, 358.84802, 4.3088503, -662.5001)
+size = Vector3(1.2, 1, 1)
+
+[node name="Back" type="CSGBox3D" parent="City" unique_id=940710255]
+transform = Transform3D(-419.8394, 0, 3.2715352e-06, 0, 16.146002, 0, -3.6703525e-05, 0, -37.421997, 258.148, 5.1764035, -476)
+size = Vector3(1.2, 1, 1)
+
+[node name="Archive Entrance" type="CSGBox3D" parent="City/Back" unique_id=1049415412]
+transform = Transform3D(-0.026109988, 0, -1.2767583e-08, 0, 0.34687048, 0, 2.5608697e-08, 0, -1.6384767, -0.35311604, -0.42985445, -0.13360977)
+operation = 2
+
+[node name="Left" type="CSGBox3D" parent="City" unique_id=1302006688]
+transform = Transform3D(-1.6516586e-05, 0, -26.400002, 0, 16.146002, 0, 377.85532, 0, -1.1539806e-06, 20.147995, 5.1764035, -231.3)
+size = Vector3(1.2, 1, 1)
+
+[node name="Garden Entrance" type="CSGCylinder3D" parent="City/Left" unique_id=1053808649]
+transform = Transform3D(0.016432948, -4.440892e-16, -1.4798105e-16, 0, -2.3553135e-08, -0.2818912, 0, 1.1395682, -2.6059265e-08, -0.51262987, -0.41015267, -0.32394028)
+operation = 2
+sides = 32
+
+[node name="Garden fence" type="CSGBox3D" parent="City" unique_id=1316318938]
+transform = Transform3D(225.57712, 0, 0, 0, 3.1318686, 0, 0, 0, 1, 135.00002, -0.86755365, -352.8)
+
+[node name="Supports" type="CSGBox3D" parent="City" unique_id=1121772603]
+transform = Transform3D(-1.6399384e-06, 3.2695677, -25.881357, -14.162968, -5.395186e-08, 4.5880566e-14, -1.3760724e-06, 2.7434933, 30.844208, 489.39996, 3.1231925, -439.79993)
+
+[node name="Supports2" type="CSGBox3D" parent="City" unique_id=1073385363]
+transform = Transform3D(-2.1624119e-06, 3.2479997, 9.536742e-07, -14.306018, -4.105685e-08, 0, -5.0022204e-13, 1.7285348e-07, 23.598001, 366.8, 3.0075192, -447.39996)
+
+[node name="Supports3" type="CSGBox3D" parent="City" unique_id=1321751631]
+transform = Transform3D(6.5369926e-13, -2.324581e-07, -23.597994, -13.005469, -4.4171504e-08, -5.969008e-15, -1.9658287e-06, 3.4943986, 0, 485.10004, 3.7304807, -318.8)
+
+[node name="Supports4" type="CSGBox3D" parent="City" unique_id=2141575128]
+transform = Transform3D(1.9658285e-06, -3.494399, 3.094503e-06, -13.005468, -4.417152e-08, -1.790702e-14, 7.5299006e-13, -3.852032e-07, -70.79398, 474.8, 3.7304807, -357.09998)
+
+[node name="Platform" type="CSGBox3D" parent="City" unique_id=1982976080]
+transform = Transform3D(2.156345e-12, -7.450581e-08, -25.485836, 3.7505151e-06, -0.32388654, 2.817867e-22, -148.35124, -9.791349e-08, -2.2292096e-14, 486.10004, 10.29497, -383.90002)
+
+[node name="Platform2" type="CSGBox3D" parent="City" unique_id=83619678]
+transform = Transform3D(-108.99277, -9.791349e-08, 1.5340073e-06, 2.755481e-06, -0.3238865, 3.8802023e-22, 4.7642234e-06, 7.45058e-08, 35.093998, 419.3001, 10.208211, -440.69995)
+
+[node name="platform opening" type="CSGBox3D" parent="City/Platform2" unique_id=919424627]
+transform = Transform3D(0.19999969, -3.3687699e-15, 1.5099033e-14, 3.2510426e-21, 6.155998, 1.490778e-19, -2.3092639e-14, -3.5527137e-15, 0.79999954, 0.27616453, 1.9073486e-06, -0.096883774)
+operation = 2
+
+[node name="Stable front" type="CSGBox3D" parent="City" unique_id=741494694]
+transform = Transform3D(-5.9934046e-06, 0, -1.08, 0, 6.73967, 0, 137.11311, 0, -4.72083e-08, 65.39998, 1.1856563, -96.80003)
+
+[node name="stable door L" type="CSGBox3D" parent="City/Stable front" unique_id=1824875774]
+transform = Transform3D(-1.4371416e-09, 0, 0.07419278, 0, 0.49954998, 0, -4.174074, 0, -4.117289e-07, 0.20129395, -0.3089362, -0.37039185)
+operation = 2
+
+[node name="stable door R" type="CSGBox3D" parent="City/Stable front" unique_id=2042323162]
+transform = Transform3D(-1.4371416e-09, 0, 0.07419278, 0, 0.49954998, 0, -4.174074, 0, -4.117289e-07, -0.22900784, -0.313227, -0.37039185)
+operation = 2
+
+[node name="Stable side" type="CSGBox3D" parent="City" unique_id=1939725760]
+transform = Transform3D(-32.249, 0, 9.441659e-08, 0, 6.739669, 0, -2.8192974e-06, 0, -1.08, 48.699997, 1.1856563, -165.30006)
+
+[node name="Stable side3" type="CSGBox3D" parent="City" unique_id=499967282]
+transform = Transform3D(-32.249, 0, 9.441659e-08, 0, 6.739669, 0, -2.8192974e-06, 0, -1.08, 48.699997, 1.1856563, -96.70006)
+
+[node name="Stable side2" type="CSGBox3D" parent="City" unique_id=1835651219]
+transform = Transform3D(-32.249, 0, 9.441659e-08, 0, 6.739669, 0, -2.8192974e-06, 0, -1.08, 48.699997, 1.1856563, -28.400055)
+
+[node name="Ramp" type="CSGBox3D" parent="City" unique_id=1081906299]
+transform = Transform3D(77.396576, 0.8125, 0, -12.922191, 0.4069668, 0, 0, 0, 15.180001, 416.60004, 3.643725, -449.59998)
+
+[node name="Market Stall" type="CSGBox3D" parent="City" unique_id=105334386]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 125.935196, -2.2845576, -223.60002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall2" type="CSGBox3D" parent="City" unique_id=125091362]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 166.63521, -2.2845576, -223.60002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall3" type="CSGBox3D" parent="City" unique_id=606262643]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 166.63521, -2.2845576, -192.90001)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall4" type="CSGBox3D" parent="City" unique_id=1845274747]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 166.63521, -2.2845576, -165.10002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall11" type="CSGBox3D" parent="City" unique_id=1201012328]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 186.23521, -2.2845576, -130.30002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall12" type="CSGBox3D" parent="City" unique_id=1497596374]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 186.23521, -2.2845576, -162.3)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall13" type="CSGBox3D" parent="City" unique_id=1752668554]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 186.23521, -2.2845576, -196.7)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall18" type="CSGBox3D" parent="City" unique_id=1636767999]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 220.23521, -2.2845576, -196.7)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall19" type="CSGBox3D" parent="City" unique_id=788369627]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 220.23521, -2.2845576, -160.59999)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall20" type="CSGBox3D" parent="City" unique_id=984148150]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 220.23521, -2.2845576, -130.49998)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall5" type="CSGBox3D" parent="City" unique_id=966081539]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 125.935196, -2.2845576, -192.50002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall6" type="CSGBox3D" parent="City" unique_id=1603032285]
+transform = Transform3D(-6.9308084e-07, 0, 2.176, 0, 2.5072298, 0, -15.855842, 0, -9.511598e-08, 125.935196, -2.2845576, -165.00002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall7" type="CSGBox3D" parent="City" unique_id=649174063]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 146.13521, -2.2845576, -158.50002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall14" type="CSGBox3D" parent="City" unique_id=299846047]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 202.63521, -2.2845576, -129.40001)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall15" type="CSGBox3D" parent="City" unique_id=353755266]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 202.63521, -2.2845576, -148.70001)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall16" type="CSGBox3D" parent="City" unique_id=938224059]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 202.63521, -2.2845576, -175.60002)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall17" type="CSGBox3D" parent="City" unique_id=294626852]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 202.63521, -2.2845576, -198.30003)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall8" type="CSGBox3D" parent="City" unique_id=1233374185]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 146.13521, -2.2845576, -179.3)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall9" type="CSGBox3D" parent="City" unique_id=1328706630]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 146.13521, -2.2845576, -206.8)
+size = Vector3(1.4, 1, 1)
+
+[node name="Market Stall10" type="CSGBox3D" parent="City" unique_id=122874734]
+transform = Transform3D(-15.855842, 0, -1.9023196e-07, 0, 2.5072298, 0, 1.3861616e-06, 0, -2.1759999, 146.13521, -2.2845576, -230.2)
+size = Vector3(1.4, 1, 1)
+
+[node name="Fountain Layer" type="CSGCylinder3D" parent="City" unique_id=1469453979]
+transform = Transform3D(22.464, 0, 0, 0, 0.9832274, -2.7578784e-07, 0, 0, 23.392002, 268.5, -2.6315746, -172.70003)
+sides = 32
+
+[node name="Fountain Layer2" type="CSGCylinder3D" parent="City" unique_id=2099291054]
+transform = Transform3D(13.478401, 0, 0, 0, 0.9832274, 0, 0, 0, 14.73696, 268.5, -0.63620603, -172.7)
+sides = 32
+
+[node name="Fountain Layer3" type="CSGCylinder3D" parent="City" unique_id=1163967636]
+transform = Transform3D(9.43488, 0, 0, 0, 0.9832274, 0, 0, 0, 10.315872, 268.5, 1.3013303, -172.7)
+sides = 32
+
+[node name="Fountain Layer4" type="CSGCylinder3D" parent="City" unique_id=1427988854]
+transform = Transform3D(4.71744, 0, 0, 0, 0.9832274, 0, 0, 0, 5.157936, 268.5, 3.383459, -172.7)
+sides = 32
+
+[node name="House" type="CSGBox3D" parent="City" unique_id=768894227]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 402.80005, -0.31810296, -142.20001)
+
+[node name="House2" type="CSGBox3D" parent="City" unique_id=1705285255]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 402.80005, -0.31810296, -187.8)
+
+[node name="House7" type="CSGBox3D" parent="City" unique_id=1938855123]
+transform = Transform3D(33.868927, 0, 0, 0, 6.4401255, 0, 0, 0, 34.848343, 360.10004, -0.31810296, -187.8)
+
+[node name="House8" type="CSGBox3D" parent="City" unique_id=2134912956]
+transform = Transform3D(33.868927, 0, 0, 0, 6.4401255, 0, 0, 0, 34.848343, 360.10004, -0.31810296, -141.90001)
+
+[node name="House9" type="CSGBox3D" parent="City" unique_id=32352132]
+transform = Transform3D(33.868927, 0, 0, 0, 6.4401255, 0, 0, 0, 34.848343, 360.10004, -0.31810296, -97.100006)
+
+[node name="House3" type="CSGBox3D" parent="City" unique_id=1066197897]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 450.40002, -0.31810296, -141.3)
+
+[node name="House4" type="CSGBox3D" parent="City" unique_id=192991935]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 450.40002, -0.31810296, -96.40001)
+
+[node name="House5" type="CSGBox3D" parent="City" unique_id=965356181]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 403.80005, -0.31810296, -96.40001)
+
+[node name="House6" type="CSGBox3D" parent="City" unique_id=2021825078]
+transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 451.10004, -0.31810296, -187.8)
+
+[node name="ProtoController" parent="." unique_id=1411599863 instance=ExtResource("1_o5qli")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 523.8, 10.599987, -277.59998)
