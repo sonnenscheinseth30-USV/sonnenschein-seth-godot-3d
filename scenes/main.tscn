@@ -264,6 +264,48 @@ transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 403.80
 [node name="House6" type="CSGBox3D" parent="City" unique_id=2021825078]
 transform = Transform3D(33.868927, 0, 0, 0, 6.440125, 0, 0, 0, 34.848343, 451.10004, -0.31810296, -187.8)
 
+[node name="Bookshelf" type="CSGBox3D" parent="City" unique_id=1931140404]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 274.2, -2.60266, -643.89996)
+
+[node name="Bookshelf7" type="CSGBox3D" parent="City" unique_id=249386162]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 266.09998, -2.60266, -621.49994)
+
+[node name="Bookshelf8" type="CSGBox3D" parent="City" unique_id=1863948285]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 346.50006, -2.60266, -621.49994)
+
+[node name="Bookshelf9" type="CSGBox3D" parent="City" unique_id=1398235228]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 429.30005, -2.60266, -621.49994)
+
+[node name="Bookshelf(small)" type="CSGBox3D" parent="City" unique_id=2043944409]
+transform = Transform3D(-2.480914e-06, 0, -8.717139, 0, 14.915371, 0, 56.756695, 0, -3.8103826e-07, 489.30005, -2.60266, -602.7001)
+
+[node name="Bookshelf(small)2" type="CSGBox3D" parent="City" unique_id=1860790209]
+transform = Transform3D(-2.480914e-06, 0, -8.717139, 0, 14.915371, 0, 56.756695, 0, -3.8103826e-07, 489.30005, -2.60266, -539.10004)
+
+[node name="Bookshelf2" type="CSGBox3D" parent="City" unique_id=1324224127]
+transform = Transform3D(-70.94587, 0, 7.620765e-07, 0, 14.915371, 0, -6.202285e-06, 0, -8.717139, 259.8, -2.60266, -499.89996)
+
+[node name="Bookshelf3" type="CSGBox3D" parent="City" unique_id=15100397]
+transform = Transform3D(-70.94587, 0, 7.620765e-07, 0, 14.915371, 0, -6.202285e-06, 0, -8.717139, 343.60004, -2.60266, -499.89996)
+
+[node name="Bookshelf4" type="CSGBox3D" parent="City" unique_id=2147307598]
+transform = Transform3D(-70.94587, 0, 7.620765e-07, 0, 14.915371, 0, -6.202285e-06, 0, -8.717139, 456.3, -2.60266, -499.89996)
+
+[node name="Bookshelf5" type="CSGBox3D" parent="City" unique_id=827852871]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 358, -2.60266, -643.89996)
+
+[node name="Bookshelf6" type="CSGBox3D" parent="City" unique_id=1682345920]
+transform = Transform3D(70.94587, 0, 0, 0, 14.915371, 0, 0, 0, 8.717139, 442.09998, -2.60266, -643.89996)
+
+[node name="Scroll Table (top)" type="CSGBox3D" parent="City" unique_id=1715308012]
+transform = Transform3D(5.1769495, 0.9575923, 0, -0.54489756, 0.7608339, 0, 0, 0, 10.0684805, 238.3, 3.9838068, -560.8)
+
+[node name="Scroll Table (stand)" type="CSGBox3D" parent="City" unique_id=525153199]
+transform = Transform3D(1.7452822, -5.149841e-07, 0, 0, 4.51107, 0, 0, 0, 2.819174, 238.3, 1.818393, -560.8)
+
+[node name="Scroll Table (base)" type="CSGBox3D" parent="City" unique_id=1741463420]
+transform = Transform3D(6.927025, -4.634857e-08, 0, 0, 0.40599632, 0, 0, 0, 6.2021832, 238.3, -0.59687567, -560.8)
+
 [node name="ProtoController" parent="." unique_id=1411599863 instance=ExtResource("1_o5qli")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 483.4, 4.4999866, -179.79997)
 

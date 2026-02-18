@@ -18,7 +18,7 @@ extends CharacterBody3D
 
 @export_group("Speeds")
 ## Look around rotation speed.
-@export var look_speed : float = 0.050
+@export var look_speed : float = 0.010
 ## Normal speed.
 @export var base_speed : float = 20.0
 ## Speed of jump.
