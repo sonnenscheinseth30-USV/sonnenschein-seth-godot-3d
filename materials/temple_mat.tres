@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1ik7062maygn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xti7"]
+albedo_color = Color(0.994592, 0.9081332, 0.7867129, 1)
+
+[resource]
+next_pass = SubResource("StandardMaterial3D_7xti7")
+albedo_color = Color(0.9120361, 0.7844479, 0.6552555, 1)

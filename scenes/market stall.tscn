@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bjeq22yh8m422"]
+
+[ext_resource type="PackedScene" uid="uid://ccluxhy1qaak3" path="res://Models/dungeon_assets/building/floor_wood.glb" id="1_11c1u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hashd"]
+size = Vector3(8, 10.5, 7)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1080472462]
+
+[node name="floor_wood" parent="." unique_id=1326896451 instance=ExtResource("1_11c1u")]
+transform = Transform3D(-3.0597968e-07, 4.9999995, 0, -6.9999995, -2.1855692e-07, 0, 0, 0, 6.9999995, -0.7, 1, -0.5)
+
+[node name="floor_wood4" parent="." unique_id=1022285242 instance=ExtResource("1_11c1u")]
+transform = Transform3D(-3.0597968e-07, -4.9999995, 0, 6.9999995, -2.1855692e-07, 0, 0, 0, 6.9999995, -1.200003, 0, 0.3)
+
+[node name="floor_wood9" parent="." unique_id=987329056 instance=ExtResource("1_11c1u")]
+transform = Transform3D(7.0000005, -2.842171e-14, 0, 0, 5, 0, 0, 0, 7.0000005, -14.600005, 27.599998, -0.09999693)
+
+[node name="floor_wood10" parent="." unique_id=1209836261 instance=ExtResource("1_11c1u")]
+transform = Transform3D(-7.0000005, -4.3711387e-07, 0, 6.119595e-07, -5, 0, 0, 0, 7.0000005, -14.600005, 27.399998, -0.09999693)
+
+[node name="floor_wood2" parent="." unique_id=1923040877 instance=ExtResource("1_11c1u")]
+transform = Transform3D(1.9106854e-14, -2.1855692e-07, -6.999999, -9.999999, -2.1855693e-07, 0, -4.371139e-07, 5, -3.059797e-07, -13.200001, 7.4, 13.800003)
+
+[node name="floor_wood5" parent="." unique_id=1123591699 instance=ExtResource("1_11c1u")]
+transform = Transform3D(-4.371139e-07, 5, 0, -10, -2.1855695e-07, 0, 0, 0, 6.9999995, -27.5, 7.2000003, -0.099998474)
+
+[node name="floor_wood3" parent="." unique_id=1215645453 instance=ExtResource("1_11c1u")]
+transform = Transform3D(1.9106854e-14, -2.1855692e-07, 6.999999, -9.999999, -2.1855693e-07, 0, 4.371139e-07, -5, -3.059797e-07, -13.6, 6.9000006, 13.299999)
+
+[node name="floor_wood7" parent="." unique_id=1775988690 instance=ExtResource("1_11c1u")]
+transform = Transform3D(1.9106854e-14, -2.1855692e-07, -6.999999, -9.999999, -2.1855693e-07, 0, -4.371139e-07, 5, -3.059797e-07, -14.000001, 7.3000007, -12.999999)
+
+[node name="floor_wood8" parent="." unique_id=904945970 instance=ExtResource("1_11c1u")]
+transform = Transform3D(-4.371139e-07, -5, 0, 10, -2.1855695e-07, 0, 0, 0, 6.9999995, -27.6, 6.9, -0.09999734)
+
+[node name="floor_wood6" parent="." unique_id=1405772951 instance=ExtResource("1_11c1u")]
+transform = Transform3D(1.9106854e-14, -2.1855692e-07, 6.999999, -9.999999, -2.1855693e-07, 0, 4.371139e-07, -5, -3.059797e-07, -13.8, 7.1, -13.999997)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1051476565]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -13.7, 9.200001, 0)
+shape = SubResource("BoxShape3D_hashd")

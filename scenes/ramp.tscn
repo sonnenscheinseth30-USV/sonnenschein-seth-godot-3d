@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://dlp5bewc5cql4"]
+
+[ext_resource type="PackedScene" uid="uid://ccluxhy1qaak3" path="res://Models/dungeon_assets/building/floor_wood.glb" id="1_f6jyy"]
+[ext_resource type="PackedScene" uid="uid://j3h42ua7yeww" path="res://scenes/torch.tscn" id="2_uuaxm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f6jyy"]
+size = Vector3(45, 3, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uuaxm"]
+size = Vector3(30, 3, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tkx18"]
+size = Vector3(2, 15, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bgx8x"]
+size = Vector3(2, 15, 30)
+
+[node name="Rampart" type="StaticBody3D" unique_id=1017680448]
+
+[node name="floor_wood" parent="." unique_id=1326896451 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(42.286167, 8.550503, 0, -15.390904, 23.492315, 0, 0, 0, 7, -10.618092, 23.797396, -0.1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1375970389]
+transform = Transform3D(3.7587705, 1.3680805, 0, -1.3680805, 3.7587705, 0, 0, 0, 4, -10.181908, 24.302607, 0)
+shape = SubResource("BoxShape3D_f6jyy")
+
+[node name="floor_wood2" parent="." unique_id=921619583 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(30, 0, 0, 0, 40, 0, 0, 0, 100, -153.80002, 54.9, -121.100006)
+
+[node name="floor_wood15" parent="." unique_id=1259734486 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-30, -1.9073486e-06, 0, 9.536743e-07, -40, 0, 0, 0, 100, -153.80002, 51.1, -121.100006)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=728397175]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -153.70001, 54.500004, -122)
+shape = SubResource("BoxShape3D_uuaxm")
+
+[node name="floor_wood3" parent="." unique_id=61130755 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-6.556708e-07, 15, 0, -15, -6.556708e-07, 0, 0, 0, 2, -114.000015, 25.600002, -294.2)
+
+[node name="floor_wood4" parent="." unique_id=1943566487 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(6.556709e-07, -15, 1.7484555e-07, -15, -6.556709e-07, 0, 5.732057e-14, -1.3113416e-06, -2, -116.8, 25.600002, -294.2)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=874754169]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -116.100006, 25.7, -294.60004)
+shape = SubResource("BoxShape3D_tkx18")
+
+[node name="floor_wood5" parent="." unique_id=185145128 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-6.556708e-07, 15, 0, -15, -6.556708e-07, 0, 0, 0, 2, -114.000015, 25.600002, -165.90001)
+
+[node name="floor_wood6" parent="." unique_id=1627555519 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(6.556709e-07, -15, 1.7484555e-07, -15, -6.556709e-07, 0, 5.732057e-14, -1.3113416e-06, -2, -116.8, 25.600002, -165.90001)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=914222690]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -116.100006, 25.7, -166.30003)
+shape = SubResource("BoxShape3D_tkx18")
+
+[node name="floor_wood7" parent="." unique_id=113197198 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-6.556708e-07, 15, 0, -15, -6.556708e-07, 0, 0, 0, 2, -114.000015, 25.600002, -56.700005)
+
+[node name="floor_wood8" parent="." unique_id=352524755 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(6.556709e-07, -15, 1.7484555e-07, -15, -6.556709e-07, 0, 5.732057e-14, -1.3113416e-06, -2, -116.8, 25.600002, -56.700005)
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=819305818]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -116.100006, 25.7, -57.10003)
+shape = SubResource("BoxShape3D_tkx18")
+
+[node name="floor_wood9" parent="." unique_id=425977708 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-1.3113416e-06, 25, 6.556708e-07, 0, -1.0927847e-06, 15, 30, 1.0927847e-06, 2.866028e-14, -113.70001, 21.800003, 7.2999954)
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="." unique_id=1854453365]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -116.30001, 22.099998, 7.199997)
+shape = SubResource("BoxShape3D_bgx8x")
+
+[node name="floor_wood10" parent="." unique_id=1335799309 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-1.3113416e-06, 25, 6.556708e-07, 0, -1.0927847e-06, 15, 30, 1.0927847e-06, 2.866028e-14, -114.600006, 21.800003, -230.00002)
+
+[node name="floor_wood13" parent="." unique_id=1015563822 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(3.934025e-06, -25, -6.5567076e-07, 0, -1.0927847e-06, 15, -30, -3.2783541e-06, -8.5980844e-14, -116.3, 21.800003, -228.50002)
+
+[node name="floor_wood14" parent="." unique_id=226466970 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(3.934025e-06, -25, -6.5567076e-07, 0, -1.0927847e-06, 15, -30, -3.2783541e-06, -8.5980844e-14, -113.40001, 21.800003, 2.0999908)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="." unique_id=1087911644]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -117.2, 22.099998, -230.10002)
+shape = SubResource("BoxShape3D_bgx8x")
+
+[node name="floor_wood11" parent="." unique_id=117464216 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(30, 1.1368684e-13, 5.329071e-14, 0, -1.0927847e-06, 15, 0, -25, -6.556708e-07, -169.85002, 25.000004, -297.04996)
+
+[node name="floor_wood12" parent="." unique_id=110767963 instance=ExtResource("1_f6jyy")]
+transform = Transform3D(-30, -2.1855694e-06, -1.1061127e-13, 0, -1.0927847e-06, 15, -2.6226833e-06, 25, 6.5567076e-07, -169.85002, 25.000004, -294.74997)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="." unique_id=1595078786]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -169.95003, 25.3, -295.94998)
+shape = SubResource("BoxShape3D_bgx8x")
+
+[node name="Torch" parent="." unique_id=1204853962 instance=ExtResource("2_uuaxm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -173, 25, -290.2)
+
+[node name="Torch2" parent="." unique_id=801545648 instance=ExtResource("2_uuaxm")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -117.00001, 25, 5.8999863)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1410674680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -118.200005, 29.8, 6.399999)
+light_color = Color(0.9490196, 0.8901961, 0.5921569, 1)
+light_energy = 10.0
+omni_range = 20.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1423200690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -172.9, 29.8, -288.50003)
+light_color = Color(0.9490196, 0.8901961, 0.5921569, 1)
+light_energy = 10.0
+omni_range = 20.0
+omni_attenuation = 0.5

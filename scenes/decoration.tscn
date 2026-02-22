@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://de1t42qnd8io5"]
+
+[ext_resource type="PackedScene" uid="uid://dmg6akq37culq" path="res://Models/dungeon_assets/props/banner_mounted.glb" id="1_cee2o"]
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=611239692]
+
+[node name="banner_mounted" parent="." unique_id=847917359 instance=ExtResource("1_cee2o")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -1, 0, 2.4)

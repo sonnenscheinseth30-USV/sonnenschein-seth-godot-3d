@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dn4qcx44ik3qj"]
+
+[ext_resource type="PackedScene" uid="uid://e4bonyla8uvg" path="res://Models/dungeon_assets/building/wall_arched.glb" id="1_0u0yr"]
+[ext_resource type="PackedScene" uid="uid://c8bs3bgovaau0" path="res://Models/dungeon_assets/building/pillar.glb" id="2_kyh5s"]
+[ext_resource type="PackedScene" uid="uid://cpj1jggjyds8g" path="res://Models/dungeon_assets/building/ceiling.glb" id="3_kyh5s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a5w5l"]
+size = Vector3(15, 15, 5)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jsg4b"]
+height = 15.0
+radius = 3.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jsg4b"]
+size = Vector3(35, 5, 35)
+
+[node name="Temple" type="StaticBody3D" unique_id=583507252]
+
+[node name="wall_arched2" parent="." unique_id=965964937 instance=ExtResource("1_0u0yr")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0.1, 0, 1.8000001)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=779198753]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 29.899998, 2.3)
+shape = SubResource("BoxShape3D_a5w5l")
+
+[node name="wall_arched3" parent="." unique_id=1905460600 instance=ExtResource("1_0u0yr")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.300003, 0, 1.8000001)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=985466847]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 60.200005, 29.199997, 2.3)
+shape = SubResource("BoxShape3D_a5w5l")
+
+[node name="pillar2" parent="." unique_id=69177891 instance=ExtResource("2_kyh5s")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 97.7, -1.0999992, 0.7000041)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1488079467]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 97.40001, 28.900002, 1.1000018)
+shape = SubResource("CylinderShape3D_jsg4b")
+
+[node name="pillar4" parent="." unique_id=907415567 instance=ExtResource("2_kyh5s")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 97.7, -1.0999992, -116)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="." unique_id=1129463782]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 97.40001, 28.900002, -115.600006)
+shape = SubResource("CylinderShape3D_jsg4b")
+
+[node name="wall_arched4" parent="." unique_id=1764161657 instance=ExtResource("1_0u0yr")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0.1, 0, -118.1)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1331543752]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 29.899998, -117.6)
+shape = SubResource("BoxShape3D_a5w5l")
+
+[node name="wall_arched5" parent="." unique_id=401631612 instance=ExtResource("1_0u0yr")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.300003, 0, -118.1)
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=250126891]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 60.200005, 29.199997, -117.6)
+shape = SubResource("BoxShape3D_a5w5l")
+
+[node name="ceiling" parent="." unique_id=189280533 instance=ExtResource("3_kyh5s")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 39.59999, 60.699993, -58.2)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="." unique_id=927262130]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 37.4, 67.29999, -58.300003)
+shape = SubResource("BoxShape3D_jsg4b")

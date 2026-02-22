@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://d0nr17bxprmuy"]
+
+[ext_resource type="PackedScene" uid="uid://ccluxhy1qaak3" path="res://Models/dungeon_assets/building/floor_wood.glb" id="1_hdco4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hdco4"]
+size = Vector3(20, 10, 1.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2tk1q"]
+size = Vector3(20, 10, 1.5)
+
+[node name="Stable" type="StaticBody3D" unique_id=1175807992]
+
+[node name="floor_wood" parent="." unique_id=1326896451 instance=ExtResource("1_hdco4")]
+transform = Transform3D(1.9106853e-14, 1.3113416e-06, 20, 10, -1.3113416e-06, 3.3881318e-21, 4.371139e-07, 30, -8.742278e-07, -3.5999994, 18.3, 4.9)
+
+[node name="floor_wood2" parent="." unique_id=1494045433 instance=ExtResource("1_hdco4")]
+transform = Transform3D(-4.371139e-07, -30, 7.579122e-14, 10, -1.3113416e-06, 7.105429e-14, -3.5527144e-14, 1.1368683e-13, 20, -5.499999, 18.3, -36.4)
+
+[node name="floor_wood7" parent="." unique_id=1145740533 instance=ExtResource("1_hdco4")]
+transform = Transform3D(4.371139e-07, 30, -3.019916e-06, 10, -1.3113416e-06, 7.10543e-14, -3.0475212e-14, -4.529874e-06, -20, 0.70000106, 18.3, -36.300003)
+
+[node name="floor_wood3" parent="." unique_id=1071726206 instance=ExtResource("1_hdco4")]
+transform = Transform3D(4.3711375e-07, 29.999998, -1.7484555e-06, 10, -1.3113415e-06, 7.1054294e-14, -2.6865615e-15, -2.6226833e-06, -20, 38.800003, 18.3, -33.600006)
+
+[node name="floor_wood6" parent="." unique_id=1919333208 instance=ExtResource("1_hdco4")]
+transform = Transform3D(-4.3711375e-07, -29.999998, -2.2737368e-13, 9.999999, -1.3113414e-06, 7.105428e-14, -3.552712e-14, 2.2737368e-13, 19.999998, 32.500004, 18.3, -33.600006)
+
+[node name="floor_wood4" parent="." unique_id=2087559315 instance=ExtResource("1_hdco4")]
+transform = Transform3D(-4.3711375e-07, -29.999998, -2.2737368e-13, 9.999999, -1.3113414e-06, 7.105428e-14, -3.552712e-14, 2.2737368e-13, 19.999998, -46.1, 18.3, -33.600006)
+
+[node name="floor_wood5" parent="." unique_id=1341992138 instance=ExtResource("1_hdco4")]
+transform = Transform3D(4.3711375e-07, 29.999998, 1.7484556e-06, 9.999998, -1.3113413e-06, 7.1054274e-14, 7.374082e-14, 2.6226826e-06, -19.999996, -40.6, 18.3, -33.600006)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=31748623]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -3.9, 18.5, 4)
+shape = SubResource("BoxShape3D_hdco4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=531011784]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 37.300003, 18.7, -33.3)
+shape = SubResource("BoxShape3D_2tk1q")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=297859083]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -45.4, 18.7, -32.8)
+shape = SubResource("BoxShape3D_2tk1q")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=1008381675]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 33.199997, 18.7, -32.8)
+shape = SubResource("BoxShape3D_2tk1q")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=584487830]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -40.600002, 18.7, -32.8)
+shape = SubResource("BoxShape3D_2tk1q")
