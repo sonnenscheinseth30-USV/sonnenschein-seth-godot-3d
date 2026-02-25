@@ -41,8 +41,8 @@ _subresources={
 "materials": {
 "DungeonMat": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://materials/temple_mat.tres",
-"use_external/path": "uid://1ik7062maygn"
+"use_external/fallback_path": "res://materials/chest_mat.tres",
+"use_external/path": "uid://uf6eih1m2nnk"
 }
 }
 }

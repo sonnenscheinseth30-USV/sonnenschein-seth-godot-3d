@@ -10,5 +10,5 @@
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 1, 0, 2.9)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=255360858]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 18.2, 0)
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 15.400001, 1.5)
 shape = SubResource("WorldBoundaryShape3D_pybca")

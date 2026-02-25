@@ -16,13 +16,13 @@ transform = Transform3D(12, 0, 0, 0, 10, 0, 0, 0, 10, 0.7, 0, 2.1000001)
 [node name="wall_window_closed3" parent="." unique_id=1150557548 instance=ExtResource("1_iqtyj")]
 transform = Transform3D(12, 0, 0, 0, 10, 0, 0, 0, 10, -0.19999361, 0.5999925, -46.700012)
 
-[node name="wall_doorway2" parent="." unique_id=1092157825 instance=ExtResource("2_xi0mm")]
+[node name="wall_doorway2" parent="." unique_id=1094437711 instance=ExtResource("2_xi0mm")]
 transform = Transform3D(-6.556708e-07, 0, -10, 0, 10, 0, 15, 0, -4.371139e-07, 23.500002, 0.4999953, -22.100002)
 
 [node name="wall_arched2" parent="." unique_id=202761655 instance=ExtResource("3_bu6dc")]
 transform = Transform3D(-6.5567076e-07, 0, 4.9999995, 0, 10, 0, -15, 0, -2.1855695e-07, -25.799997, 0.6000016, -22.600002)
 
-[node name="ceiling" parent="." unique_id=189280533 instance=ExtResource("4_l3jqw")]
+[node name="ceiling" parent="." unique_id=895896672 instance=ExtResource("4_l3jqw")]
 transform = Transform3D(15, 0, 0, 0, 10, 0, 0, 0, 17, -0.39999247, 40.8, -21.399994)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2147456886]

@@ -7,7 +7,7 @@ size = Vector3(10, 10, 3)
 
 [node name="Garden wall" type="StaticBody3D" unique_id=834520975]
 
-[node name="wall_cracked2" parent="." unique_id=1993508989 instance=ExtResource("1_v0tm6")]
+[node name="wall_cracked2" parent="." unique_id=787760349 instance=ExtResource("1_v0tm6")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.3, 0, 0.7)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1541637758]

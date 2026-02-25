@@ -10,7 +10,7 @@ size = Vector3(5, 15, 5)
 
 [node name="Corner" type="StaticBody3D" unique_id=1238696278]
 
-[node name="wall_corner2" parent="." unique_id=390009606 instance=ExtResource("1_u3g6x")]
+[node name="wall_corner2" parent="." unique_id=1132492124 instance=ExtResource("1_u3g6x")]
 transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0.7, 0, 0.5)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2140738008]
