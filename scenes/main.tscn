@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bidjferi151fr" path="res://Models/dungeon_assets/building/wall_cracked.glb" id="3_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://ncyl2n0cp4uo" path="res://scenes/wall.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://jvnipj4sb3l7" path="res://scenes/stable wall(window).tscn" id="3_tefeu"]
+[ext_resource type="PackedScene" uid="uid://ddbipun31tl6s" path="res://scenes/Fountain.tscn" id="4_gqmmt"]
 [ext_resource type="PackedScene" uid="uid://b5b4o6vbr4rgq" path="res://scenes/garden wall.tscn" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://d1pflv6hmnjbn" path="res://scenes/wall corners.tscn" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://eivxhvildnr" path="res://scenes/doorway.tscn" id="6_o6xl0"]
@@ -47,40 +48,43 @@ environment = SubResource("Environment_0wfyh")
 transform = Transform3D(0.3655665, 0.5541421, 0.7478554, -0.91346806, 0.059325516, 0.40256226, 0.17870988, -0.83030534, 0.5278785, 1974.4001, 409.6, -1599.6)
 shadow_enabled = true
 
-[node name="Garden fence" type="Node3D" parent="." unique_id=229909671]
+[node name="Garden" type="Node3D" parent="." unique_id=229909671]
 
-[node name="StaticBody3D8" parent="Garden fence" unique_id=834520975 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D8" parent="Garden" unique_id=834520975 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1140.6001, 2.5999994, -890.1)
 
-[node name="StaticBody3D13" parent="Garden fence" unique_id=1368734175 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D13" parent="Garden" unique_id=1368734175 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1101.9001, 2.5999994, -890.1)
 
-[node name="StaticBody3D14" parent="Garden fence" unique_id=1400659228 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D14" parent="Garden" unique_id=1400659228 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1062.8002, 2.5999994, -890.1)
 
-[node name="StaticBody3D15" parent="Garden fence" unique_id=1946010816 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D15" parent="Garden" unique_id=1946010816 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1023.10016, 2.5999994, -890.1)
 
-[node name="StaticBody3D16" parent="Garden fence" unique_id=2089423549 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D16" parent="Garden" unique_id=2089423549 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1003.10016, 2.5999994, -890.1)
 
-[node name="StaticBody3D9" parent="Garden fence" unique_id=1268886444 instance=ExtResource("5_o6xl0")]
+[node name="courtyard ground" parent="Garden" unique_id=787760349 instance=ExtResource("3_dp3eg")]
+transform = Transform3D(59.999992, 0, 0, 0, -2.6445389e-06, 0.99999994, 0, -60.499992, -4.3711385e-08, 1101.3, 2.2999997, -893.7001)
+
+[node name="courtyard ground2" parent="Garden" unique_id=633465731 instance=ExtResource("3_dp3eg")]
+transform = Transform3D(50, 0, 0, 0, -2.5964566e-06, 1, 0, -59.399998, -4.371139e-08, 1320.0001, 2.5000005, -897.8)
+
+[node name="StaticBody3D9" parent="Garden" unique_id=1268886444 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1177.9001, 2.5999994, -890.1)
 
-[node name="StaticBody3D10" parent="Garden fence" unique_id=589528567 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D10" parent="Garden" unique_id=589528567 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1216.9001, 2.5999994, -890.1)
 
-[node name="StaticBody3D11" parent="Garden fence" unique_id=455640112 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D11" parent="Garden" unique_id=455640112 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1326.4, 2.5999994, -890.1)
 
-[node name="StaticBody3D19" parent="Garden fence" unique_id=2107726140 instance=ExtResource("5_o6xl0")]
+[node name="StaticBody3D19" parent="Garden" unique_id=2107726140 instance=ExtResource("5_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1365.9, 2.5999994, -890.1)
 
-[node name="courtyard ground" parent="Garden fence" unique_id=787760349 instance=ExtResource("3_dp3eg")]
-transform = Transform3D(60, 0, 0, 0, -2.644539e-06, 1, 0, -60.5, -4.371139e-08, 1101.3, 2.2999997, -893.7001)
-
-[node name="courtyard ground2" parent="Garden fence" unique_id=633465731 instance=ExtResource("3_dp3eg")]
-transform = Transform3D(50, 0, 0, 0, -2.5964566e-06, 1, 0, -59.399998, -4.371139e-08, 1320.0001, 2.5000005, -897.8)
+[node name="StaticBody3D12" parent="Garden" unique_id=2013990207 instance=ExtResource("4_gqmmt")]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.9999999, 1377.6001, 5.1000004, -1003.2999)
 
 [node name="Wall" type="Node3D" parent="." unique_id=1548375607]
 
@@ -334,6 +338,27 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1736
 
 [node name="Market" type="Node3D" parent="." unique_id=676173738]
 
+[node name="StaticBody3D" parent="Market" unique_id=409209116 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1315.5001, 2, -412.5)
+
+[node name="StaticBody3D3" parent="Market" unique_id=1176671850 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1311.0001, 1.9999983, -398.5)
+
+[node name="StaticBody3D14" parent="Market" unique_id=418857058 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1298.3, 2.6999993, -405.9)
+
+[node name="StaticBody3D15" parent="Market" unique_id=595682883 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1244.5, 1.8999996, -411.40002)
+
+[node name="StaticBody3D16" parent="Market" unique_id=1511382532 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1246.1, 1.5999992, -216.8)
+
+[node name="StaticBody3D17" parent="Market" unique_id=1780701611 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1246.1, 1.9999993, -207.8)
+
+[node name="StaticBody3D18" parent="Market" unique_id=795369973 instance=ExtResource("18_dp3eg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1257.2001, 1.8999994, -212.40001)
+
 [node name="StaticBody3D2" parent="Market" unique_id=1080472462 instance=ExtResource("16_jbj1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1234.9, 4.2, -483.80002)
 
@@ -366,24 +391,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1295.5001, 4.500001, -539.2)
 
 [node name="StaticBody3D5" parent="Market" unique_id=1440479761 instance=ExtResource("16_jbj1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1236.8, 4.5000005, -434.19998)
-
-[node name="StaticBody3D" parent="." unique_id=409209116 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1315.5001, 2, -412.5)
-
-[node name="StaticBody3D2" parent="." unique_id=1176671850 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1311.0001, 1.9999983, -398.5)
-
-[node name="StaticBody3D3" parent="." unique_id=418857058 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1298.3, 2.6999993, -405.9)
-
-[node name="StaticBody3D4" parent="." unique_id=595682883 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1244.5, 1.8999996, -411.40002)
-
-[node name="StaticBody3D5" parent="." unique_id=1511382532 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1246.1, 1.5999992, -216.8)
-
-[node name="StaticBody3D6" parent="." unique_id=1780701611 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1246.1, 1.9999993, -207.8)
-
-[node name="StaticBody3D7" parent="." unique_id=795369973 instance=ExtResource("18_dp3eg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1257.2001, 1.8999994, -212.40001)
