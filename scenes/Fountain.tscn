@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ddbipun31tl6s"]
 
-[ext_resource type="PackedScene" uid="uid://xvsjbu2r3ipn" path="res://Custom Assets/Fountain.glb" id="1_oq2m6"]
+[ext_resource type="PackedScene" uid="uid://xvsjbu2r3ipn" path="res://addons/Custom Assets/Fountain.glb" id="1_oq2m6"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_iianm"]
 height = 18.0

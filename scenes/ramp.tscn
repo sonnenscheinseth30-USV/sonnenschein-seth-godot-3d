@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ccluxhy1qaak3" path="res://Models/dungeon_assets/building/floor_wood.glb" id="1_f6jyy"]
 [ext_resource type="PackedScene" uid="uid://j3h42ua7yeww" path="res://scenes/torch.tscn" id="2_uuaxm"]
+[ext_resource type="PackedScene" uid="uid://ct6l42yjatvnm" path="res://scenes/fire.tscn" id="3_tkx18"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f6jyy"]
 size = Vector3(45, 3, 7)
@@ -99,3 +100,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -173, 25, -290.2)
 
 [node name="Torch2" parent="." unique_id=801545648 instance=ExtResource("2_uuaxm")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -117.00001, 25, 5.8999863)
+
+[node name="fire" parent="." unique_id=2060464803 instance=ExtResource("3_tkx18")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -172.50002, 30.400002, -288.59998)
