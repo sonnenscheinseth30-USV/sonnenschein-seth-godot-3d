@@ -31,9 +31,13 @@ sky_material = SubResource("ProceduralSkyMaterial_sgp6g")
 [sub_resource type="Environment" id="Environment_0wfyh"]
 background_mode = 2
 sky = SubResource("Sky_o5qli")
+sky_rotation = Vector3(0, 2.6179938, 0)
 ambient_light_sky_contribution = 0.25
 tonemap_mode = 2
 ssao_enabled = true
+ssao_horizon = 0.5
+ssao_sharpness = 1.0
+ssil_enabled = true
 glow_enabled = true
 
 [node name="Main" type="Node3D" unique_id=1373912490]
@@ -45,7 +49,7 @@ transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 1447.7, 36.49999, -3
 environment = SubResource("Environment_0wfyh")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1852530934]
-transform = Transform3D(0.3655665, 0.5541421, 0.7478554, -0.91346806, 0.059325516, 0.40256226, 0.17870988, -0.83030534, 0.5278785, 1974.4001, 409.6, -1599.6)
+transform = Transform3D(0.9690123, -0.23834182, -0.06487199, 0.24574804, 0.9036708, 0.35069525, -0.024962433, -0.35577017, 0.9342401, 1988.7001, 396.5, -1315.8999)
 shadow_enabled = true
 
 [node name="Garden" type="Node3D" parent="." unique_id=229909671]
@@ -295,7 +299,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1463
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1985.8, -0.49999833, -1147.8002)
 
 [node name="Ceiling" parent="." unique_id=895896672 instance=ExtResource("15_jkv2x")]
-transform = Transform3D(145, 0, 0, 0, 50, 0, 0, 0, 75, 1730.7001, 104.3, -1044.3002)
+transform = Transform3D(145, 0, 0, 0, 50, 0, 0, 0, 75, 1730.7001, 99.300026, -1044.3002)
 
 [node name="Stable" type="Node3D" parent="." unique_id=305685423]
 
